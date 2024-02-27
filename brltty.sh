@@ -24,7 +24,7 @@ echo $braille_drivers
 # get the list of braille-devices "braille-device"
 # grep "braille-device" will print the line that contains "braille-device"
 # awk '{print $2}' will print the second column of the output
-braille_devices=$(grep "braille-device" $configfile | awk '{print $2}')
+braille_devices=$(grep "#braille-device" $configfile | awk '{print $2}')
 echo $braille_devices
 
 # get the number of text tables "#text-table"
